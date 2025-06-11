@@ -140,6 +140,11 @@ lms-platform/
 │   │       │   └── CategoryRepository.java
 │   │       │   └── PurchaseRepository.java
 │   │       │
+│   │       ├── security/
+│   │       │   └──
+│   │       │   └──
+│   │       │   └──
+│   │       │   └──
 │   │       ├── service/                                      ← ⚙️ Business Logic
 │   │       │   └── AuthService.java
 │   │       │   └── MentorService.java
@@ -184,6 +189,18 @@ lms-platform/
 ├── docker-compose.yml                                 ← 🐳 Docker Config for Backend, Frontend, MySQL
 ├── .gitignore
 └── README.md
+
+```
+
+1️⃣ Entity
+2️⃣ Repository
+3️⃣ DTO
+4️⃣ Mapper
+5️⃣ Service
+6️⃣ Controller
+7️⃣ Config (JWT/Security)
+8️⃣ Exception Handler
+8️⃣ Security
 
 ```
 
