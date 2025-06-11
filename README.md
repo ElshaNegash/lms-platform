@@ -114,7 +114,7 @@ lms-platform/
 │   │       ├── dto/                                          ← 📨 Request/Response DTOs
 │   │       │   └── LoginRequest.java
 │   │       │   └── RegisterRequest.java
-│   │       │   └── CourseResponse.java
+│   │       │   └── CourseRequest.java
 │   │       │   └── CourseResponse.java
 │   │       │   └── PurchaseResponse.java
 │   │       │
