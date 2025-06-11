@@ -437,6 +437,84 @@ git push
 
 ---
 
+🎯 After completing backend implementation:
+
+✅ 1. Finish and Connect Frontend (React)
+🔌 Connect React to Spring Boot APIs
+
+Use axios to call /api/auth/login, /api/mentor/course, etc.
+
+Store JWT token in localStorage or sessionStorage
+
+Add Authorization: Bearer <token> header to each request
+
+🛡️ React Auth Context
+
+Create a context to manage the logged-in user and token
+
+Protect routes based on roles (Admin, Mentor, Customer)
+
+📱 Pages to build:
+
+Login / Register pages
+
+Admin Dashboard (Categories, Users overview)
+
+Mentor Dashboard (Add/View Courses, Sales stats)
+
+Customer Pages (Browse, Purchase, My Courses)
+
+✅ 2. Integration Testing
+🧪 Write end-to-end tests using tools like:
+
+Postman (manually test your endpoints)
+
+Spring Boot’s @SpringBootTest for full application flow
+
+React Testing Library / Cypress for frontend behavior
+
+✅ 3. Containerize the App with Docker
+📦 Create:
+
+Dockerfile for backend
+
+Dockerfile for frontend
+
+docker-compose.yml to orchestrate:
+
+Spring Boot
+
+React
+
+MySQL
+
+Example:
+
+services:
+  mysql:
+    image: mysql:8
+    ...
+  backend:
+    build: ./backend
+    ports: ["8080:8080"]
+    depends_on: [mysql]
+  frontend:
+    build: ./frontend
+    ports: ["3000:3000"]
+
+✅ 4. Deploy Your LMS
+🚀 Use one of these options:
+
+Render or Railway for simple backend + frontend hosting
+
+Heroku or Vercel + Spring Boot on Fly.io
+
+AWS (EC2 + RDS + S3) for production-grade deployment
+
+Netlify (for frontend) + Backend on Render
+
+---
+
 ## 📚 License
 
 This project is licensed under the ELSHA.
