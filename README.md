@@ -140,11 +140,6 @@ lms-platform/
 │   │       │   └── CategoryRepository.java
 │   │       │   └── PurchaseRepository.java
 │   │       │
-│   │       ├── security/
-│   │       │   └──
-│   │       │   └──
-│   │       │   └──
-│   │       │   └──
 │   │       ├── service/                                      ← ⚙️ Business Logic
 │   │       │   └── AuthService.java
 │   │       │   └── MentorService.java
